@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background: rgb(37, 33, 33) ;
+}
+
+.container-slider {
+  height: auto;
+  width: 100%; 
+  max-width: 1200px;
+}
+
+.slider {
+  max-width: 1000px;
+  width: 100%;
+  height: 1000px;
+  border-radius: 10px;
+  overflow: hidden;
+  
+}
+
+.container {
+  padding: 20px;
+  height: auto;
+  width: auto;
+}
+
+.container-nav {
+  height: 40px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide  img{
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.navigation-manual {
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  background-color: rgb(65, 144, 255); 
+  color: white; 
+  padding: 7px; 
+  border-radius: 10px; 
+  cursor: pointer;
+  border: 2px solid rgb(65, 144, 255); 
+  transition: all 0.3s ease; 
+  margin: 7px;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 10px;
+} 
+.manual-btn:last-child {
+  margin-right: 0px;
+}
+
+.manual-btn:hover {
+  background-color: white; 
+  color: rgb(65, 144, 255); 
+  border-color: rgb(65, 144, 255); 
+}
+
+.manual-btn:active {
+  background-color: transparent; 
+  color: white; 
+  border: 2px solid white; 
+  padding: 7px; 
+}
+
+.manual-btn.clicked {
+  background-color: transparent; 
+  color: white; 
+  border: 2px solid white; 
+  padding: 7px; 
+}
+
+#radio1:checked ~ .first {
+  margin-left: -0;
+}
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+#radio4:checked ~ .first {
+  margin-left: -60.4%;
+}
+
+.mem-text {
+  font-size: 26px;
+  color: white;
+  transform: translateX(100%); 
+  transition: transform 0.5s ease; 
+}
+
+.mem-text.show {
+  transform: translateX(0); 
+}
+
+
+@media (max-width:800px) {
+  .container-nav {
+    justify-content: center;
+  }
+}
