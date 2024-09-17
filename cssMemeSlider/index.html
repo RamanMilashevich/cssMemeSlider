@@ -8,49 +8,60 @@
   </head>
   <body>
     
-    <div class="container">
-      <div class="slider">
-        <div class="container-slider">
-          <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            <div class="slide first">
-              <img src="./img/1.jpg" alt="">
+    <body>
+      <div class="container">
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>CSS Slider with Dots, Text and Dark Background</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+            <div class="slider">
+                <!-- Радио-кнопки для переключения слайдов -->
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+        
+                <!-- Слайды с изображениями и текстом -->
+                <div class="slides">
+                    <div class="slide" id="slide-1">
+                        <img src="img/1.jpg" alt="Slide 1">
+                    </div>
+                    <div class="slide" id="slide-2">
+                        <img src="img/4.jpg" alt="Slide 2">
+                    </div>
+                    <div class="slide" id="slide-3">
+                        <img src="img/1.jpg" alt="Slide 3">
+                    </div>
+                    <div class="slide" id="slide-4">
+                        <img src="img/4.jpg" alt="Slide 4">
+                    </div>
+                </div>
+        
+                <div class="dots">
+                    <label for="slide1" class="dot"></label>
+                    <label for="slide2" class="dot"></label>
+                    <label for="slide3" class="dot"></label>
+                    <label for="slide4" class="dot"></label>
+                </div>
+
+                <div class="slider-text">
+                  <p id="text1">This is the text for the first slide.</p>
+                  <p id="text2">This is the text for the second slide.</p>
+                  <p id="text3">This is the text for the third slide.</p>
+                  <p id="text4">This is the text for the fourth slide.</p>
+              </div>
             </div>
-            <div class="slide">
-              <img src="./img/2.webp" alt="">
-            </div>
-            <div class="slide">
-              <img src="./img/3.png" alt="">
-            </div>
-            <div class="slide">
-              <img src="./img/4.jpg" alt="">
-            </div>
-            <div class="navigation-auto">
-              <div class="auto-btn1"></div>
-              <div class="auto-btn2"></div>
-              <div class="auto-btn3"></div>
-              <div class="auto-btn4"></div>
-            </div>
-          </div>
-          <div class="container-nav">
-            <div class="navigation-manual">
-              <label for="radio1" class="manual-btn clicked"></label>
-              <label for="radio2" class="manual-btn"></label>
-              <label for="radio3" class="manual-btn"></label>
-              <label for="radio4" class="manual-btn"></label>
-            </div>
-          </div>
-          <div class="container-text">
-            <p class="mem-text">
-              First mem
-            </p>
-          </div>
-        </div>
+        </body>
+        </html>
+        
+  </body>
       </div>
-    </div>
+  </body>
   </body>
   <script src="script.js"></script>
 </html>
